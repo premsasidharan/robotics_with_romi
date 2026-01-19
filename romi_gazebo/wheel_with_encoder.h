@@ -36,7 +36,7 @@ public:
     // Error = target - actual, so we pass actual as observation
     const float pwm = pid.process(actual_velocity, 0.025, -250.0f, 250.0f);
     
-    // First-order motor dynamics model
+    // Second-order motor dynamics model
     // Uses previous velocity state for motor dynamics
     const float curr_vel = 0.95f * prev_vel_1 - 0.239f * prev_vel_2 + 0.1232f * prev_pwm_1;
     

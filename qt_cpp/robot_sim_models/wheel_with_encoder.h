@@ -25,7 +25,7 @@ public:
     // PID control output (PWM command)
     const float pwm = pid.process(prev_vel_1, 0.025, -250.0f, 250.0f);
     
-    // First-order motor dynamics model
+    // Second-order motor dynamics model
     const float curr_vel = 0.95f * prev_vel_1 - 0.239f * prev_vel_2 + 0.1232f * prev_pwm_1;
     
     prev_pwm_1 = pwm;

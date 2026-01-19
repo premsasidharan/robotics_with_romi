@@ -120,7 +120,7 @@ python inverse_kinematics_cam_viz.py
 ### Simulations
 - ✅ Forward kinematics with odometry drift visualization
 - ✅ Inverse kinematics with waypoint navigation
-- ✅ Realistic motor dynamics (first-order model)
+- ✅ Realistic motor dynamics (second-order model)
 - ✅ Encoder noise simulation (Gaussian noise)
 - ✅ PID velocity control with anti-windup
 

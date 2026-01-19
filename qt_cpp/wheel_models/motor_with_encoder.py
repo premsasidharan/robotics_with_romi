@@ -2,7 +2,7 @@ import random
 
 class MotorWithEncoder:
     """
-    Motor with encoder simulation using difference equation model.
+    Motor with encoder simulation using second-order difference equation model.
     
     Implements: y[n] = b0*x[n-1] + a0*y[n-1] + a1*y[n-2]
     

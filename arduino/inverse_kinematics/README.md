@@ -273,7 +273,7 @@ For manual testing with Arduino Serial Monitor, you have two options:
 ### Pre-tuned Parameters
 
 The default PID gains in this sketch have been tuned using:
-1. **Mathematical Model**: Motor dynamics characterized using difference equations (first-order model)
+1. **Mathematical Model**: Motor dynamics characterized using difference equations (second-order model)
 2. **Python Simulation**: Velocity control gains optimized using the `wheel_models/` Python scripts
 3. **C++ Simulation**: Distance and heading PIDs validated using C++ Qt-based robot simulations (`inverse_kinematics_sim_app`)
 

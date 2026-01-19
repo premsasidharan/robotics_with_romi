@@ -19,7 +19,7 @@ This directory contains desktop applications, simulation servers, and supporting
 ### Libraries
 
 - **`helper_opengl/`**: OpenGL utility library for Qt applications. Manages buffers, shaders, textures, and provides common rendering functionality.
-- **`robot_sim_models/`**: C++ library with PID controller and wheel dynamics models. Provides realistic motor simulation with first-order dynamics and encoder noise.
+- **`robot_sim_models/`**: C++ library with PID controller and wheel dynamics models. Provides realistic motor simulation with second-order dynamics and encoder noise.
 - **`virtual_controller/`**: Qt widget library providing virtual joystick controls. Reusable multi-touch enabled joystick components for robot control interfaces.
 
 ### Tools

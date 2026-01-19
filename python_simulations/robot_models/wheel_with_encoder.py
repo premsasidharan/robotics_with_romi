@@ -11,7 +11,7 @@ from .pid_control import PidControl
 class WheelWithEncoder:
     """
     Simulates a wheel with encoder, matching the C++ version.
-    Uses PID velocity controller with first-order motor dynamics.
+    Uses PID velocity controller with second-order motor dynamics.
     Velocity is in encoder ticks per sample (25ms period).
     """
     
@@ -51,7 +51,7 @@ class WheelWithEncoder:
         # PID control output (PWM command)
         pwm = self.pid.process(self.prev_vel_1, 0.025, -250.0, 250.0)
         
-        # First-order motor dynamics model
+        # Second-order motor dynamics model
         # Difference equation: v[n] = 0.95*v[n-1] - 0.239*v[n-2] + 0.1232*pwm[n-1]
         curr_vel = 0.95 * self.prev_vel_1 - 0.239 * self.prev_vel_2 + 0.1232 * self.prev_pwm_1
         
