@@ -15,6 +15,8 @@ This repository provides a complete software stack for the Pololu Romi 32U4 robo
 
 All projects share common robot parameters and control algorithms, allowing seamless transition between simulation and hardware deployment.
 
+![Romi Robot Demo](romi_video.gif)
+
 ## Project Structure
 
 ### 📁 `arduino/`
