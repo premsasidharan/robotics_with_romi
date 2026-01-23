@@ -2,6 +2,8 @@
 
 Comprehensive collection of robot simulation, control, and visualization tools for the Pololu Romi robot platform. Includes Arduino firmware, C++ Qt applications, and Python simulations for forward/inverse kinematics, motor control, and waypoint navigation.
 
+![Romi Robot Demo](romi_video.gif)
+
 ## Overview
 
 This repository provides a complete software stack for the Pololu Romi 32U4 robot, covering multiple implementation approaches and use cases:
@@ -14,8 +16,6 @@ This repository provides a complete software stack for the Pololu Romi 32U4 robo
 - **Docker Environment**: Containerized ROS2 and Gazebo setup for reproducible development environments
 
 All projects share common robot parameters and control algorithms, allowing seamless transition between simulation and hardware deployment.
-
-![Romi Robot Demo](romi_video.gif)
 
 ## Project Structure
 
